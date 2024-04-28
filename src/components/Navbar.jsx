@@ -24,7 +24,7 @@ const Menu = [
   },
   {
     name: 'Faire un don',
-    href: '/Faireundon'
+    href: '/https://www.helloasso.com/associations/patronage-d-allauch'
   },
 ];
 
@@ -65,7 +65,7 @@ const Navbar = () => {
         <a href="/" target="_blank" rel="noopener noreferrer">
           <FiFacebook className="text-white" />
         </a>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.helloasso.com/associations/patronage-d-allauch" target="_blank" rel="noopener noreferrer">
           <img src={Icon} alt="logo" className="h-6 w-6" />
         </a>
       </div>
