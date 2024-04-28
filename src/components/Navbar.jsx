@@ -12,7 +12,7 @@ const Menu = [
   },
   {
     name: 'Activités',
-    href: '/activités'
+    href: '/activites'
   },
   {
     name: 'Inscription',
@@ -20,7 +20,7 @@ const Menu = [
   },
   {
     name: 'Qui-sommes-nous?',
-    href: '/Qui-sommes-nous?'
+    href: '/Quisommesnous?'
   },
   {
     name: 'Faire un don',
