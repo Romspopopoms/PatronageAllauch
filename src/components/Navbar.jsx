@@ -16,7 +16,7 @@ const Menu = [
   },
   {
     name: 'Inscription',
-    href: '/inscription'
+    href: '/https://patronage-allauch.holi-d.fr/'
   },
   {
     name: 'Qui-sommes-nous?',

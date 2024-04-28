@@ -37,7 +37,7 @@ const Footer = () => {
     <div className="flex flex-col justify-center items-center gap-y-4">
         <h1 className="text-[#74A7BE] font-laila text-4xl">Inscriptions en ligne</h1>
         <a
-        href="/"
+        href="/https://patronage-allauch.holi-d.fr/"
         target="_blank"
         rel="noopener noreferrer"
         >
@@ -49,12 +49,12 @@ const Footer = () => {
     <div className="text-center font-laila text-[#74A7BE]">
         <div className="text-3xl underline">Contact</div>
         <p className="font-light">Patronage d’Allauch<br></br>
-495 Avenue Leï Rima,<br></br>
-13190 Allauch<br></br>
-<br></br><br></br>
-06 28 92 09 98<br></br>
-patronageallauch@gmail.com</p>
-</div>
+        495 Avenue Leï Rima,<br></br>
+        13190 Allauch<br></br>
+        <br></br><br></br>
+        06 28 92 09 98<br></br>
+        patronageallauch@gmail.com</p>
+    </div>
     </div>
     <div className="w-auto h-[90px] bg-primary flex justify-center items-center">
         <div className="text-center font-laila text-white">2024 Patronage Saint Laurent d’Allauch - Conception et rèalisation :</div>
