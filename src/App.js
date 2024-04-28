@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { Analytics } from "@vercel/analytics/react"
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Activités from './pages/Activités';
@@ -18,6 +18,8 @@ const App = () => {
 
             </Routes>
           </div>
+          <Analytics />
+
         </Router>
 
   );
