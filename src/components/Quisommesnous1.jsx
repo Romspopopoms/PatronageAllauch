@@ -4,7 +4,7 @@ const Quisommesnous1 = () => {
     return (
         <div className="h-auto w-auto flex flex-col">
             <h1 className="text-3xl xl:text-5xl font-bold font-kalam text-secondary py-4 xl:py-8 text-center">Le Patronage</h1>
-            <p className="text-center font-laila text-accent xl:text-2xl px-4 xl:px-0">Le Patronage est un lieu d’accueil pour aider les enfants et adolescents après l'école.<br></br>
+            <p className="text-center font-laila text-[#74A7BE] xl:text-2xl px-4 xl:px-0">Le Patronage est un lieu d’accueil pour aider les enfants et adolescents après l'école.<br></br>
             C’est aussi un centre de loisirs proposant des activités constructives et variées 
             <br></br>
             pour les enfants.
