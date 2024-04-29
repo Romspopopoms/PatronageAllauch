@@ -22,11 +22,19 @@ const Menu = [
     name: 'Qui-sommes-nous?',
     href: '/Quisommesnous'
   },
-  // Notez que l'adresse a été corrigée en enlevant le slash redondant avant 'https://'
+  {
+    name: 'Recrutement',
+    href: '/recrutement'
+  },
+  {
+    name: 'Nos News',
+    href: '/nosnews'
+  },
   {
     name: 'Faire un don',
     href: 'https://www.helloasso.com/associations/patronage-d-allauch'
   },
+  
 ];
 
 const Navbar = () => {
@@ -38,8 +46,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full justify-between items-center h-[100px] bg-primary">
-      <div className="flex px-8">
+    <div className="flex w-screen justify-between items-center h-[100px] bg-primary">
+      <div className="flex xl:px-8">
         <img src={logo} alt="logo" className="h-16 w-16" />
       </div>
       <div className="flex flex-row items-center gap-x-8">

@@ -8,8 +8,8 @@ const Quisommesnous = () => {
     return (
         <div className="h-auto w-auto flex flex-col gap-y-12">
             <img src={Banniere2} alt="banniere" className="w-auto h-auto object-cover" />
-            <Quisommesnous1 />
             <Quisommesnous2 />
+            <Quisommesnous1 />
             <Footer />
         </div>
     )

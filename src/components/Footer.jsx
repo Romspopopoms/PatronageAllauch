@@ -20,13 +20,13 @@ const Menu1 = [
 
 const Footer = () => {
   return (
+    <div className="mt-8 xl:mt-0 flex flex-col">
+    <div className="flex flex-col xl:flex-row h-[396px] w-auto bg-white justify-between items-center px-24  ">
     <div className="flex flex-col">
-    <div className="flex flex-row h-[396px] w-auto bg-white justify-between items-center px-24  ">
-    <div className="flex flex-col">
-        <img src={Logobleu} alt="Logo2" className="w-[200px] h-[100px] object-cover"/>
+        <img src={Logobleu} alt="Logo2" className="h-auto w-auto xl:w-[200px] xl:h-[100px] object-cover"/>
         {Menu1.map((item, index) => {
             return (
-                <div className="text-center text-[#74A7BE] font-light font-laila py-2" key={index}>
+                <div className="text-center text-[#74A7BE] font-light font-laila xl:py-2" key={index}>
                     <Link to={item.href} className="flex items-center justify-center w-full h-full cursor-pointer hover:text-accent">
                     {item.name}
                     </Link>            
@@ -34,7 +34,7 @@ const Footer = () => {
         )
     })}
     </div>
-    <div className="flex flex-col justify-center items-center gap-y-4">
+    <div className=" flex-col justify-center items-center xl:gap-y-4 hidden xl:flex">
         <h1 className="text-[#74A7BE] font-laila text-4xl">Inscriptions en ligne</h1>
         <a
         href="/https://patronage-allauch.holi-d.fr/"
@@ -56,7 +56,7 @@ const Footer = () => {
         patronageallauch@gmail.com</p>
     </div>
     </div>
-    <div className="w-auto h-[90px] bg-primary flex justify-center items-center">
+    <div className="w-auto h-auto xl:h-[90px] bg-primary flex flex-col justify-center items-center">
         <div className="text-center font-laila text-white">2024 Patronage Saint Laurent d’Allauch - Conception et rèalisation :</div>
         <img src={LogoVox} alt="Logo_VoxUnity" className="size-auto object-cover"/>
     </div>
