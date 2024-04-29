@@ -28,7 +28,7 @@ const Quisommesnous2 = () => {
             </div>
 
             <div className="flex flex-row gap-x-12 mt-8 xl:mt-0">
-                <div className="flex flex-col gap-y-4 xl:gap-y-0 justify-center items-center">
+                <div className="flex flex-col gap-y-4  justify-center items-center">
                 <img src={Jb} alt="Jb" className="xl:w-auto xl:h-auto h-48 w-48 object-cover xl:hidden" />
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center">Jean-Baptiste Bellido</div>
                 <div className="text-2xl font-semibold font-kalam text-[#74A7BE] text-center">Directeur adjoint du Patronage.</div>
@@ -45,7 +45,7 @@ const Quisommesnous2 = () => {
                 
             </div>
 
-            <div className="flex  flex-col xl:flex-row gap-x-12 gap-y-4 xl:gap-y-0 justify-center items-center mt-8 xl:mt-0 ">
+            <div className="flex  flex-col xl:flex-row gap-x-12 gap-y-4 justify-center items-center mt-8 xl:mt-0 ">
                 <img src={Père} alt="PèreMatthieu" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center">Abbé Matthieu Desjardins</div>
@@ -61,7 +61,7 @@ const Quisommesnous2 = () => {
 
             <div className="text-3xl xl:text-5xl font-bold font-kalam text-secondary text-center mt-8 xl:mt-0">Nos bénévoles et animateurs ponctuels</div>
 
-            <div className="flex flex-col xl:flex-row gap-x-12 gap-y-4 xl:gap-y-0 justify-center items-center ">
+            <div className="flex flex-col xl:flex-row gap-x-12 gap-y-4  justify-center items-center ">
                 <img src={Bénévoles} alt="NosBénévoles" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center">Nos bénévoles</div>
@@ -76,7 +76,7 @@ const Quisommesnous2 = () => {
                 </div>               
             </div>
 
-            <div className="flex flex-col xl:flex-row gap-x-12 gap-y-4 xl:gap-y-0 justify-center items-center mt-8 xl:mt-0">
+            <div className="flex flex-col xl:flex-row gap-x-12 gap-y-4  justify-center items-center mt-8 xl:mt-0">
                 <div className="flex flex-col gap-y-4 justify-center items-center">
                 <img src={Autres} alt="AnimateursPonctuels" className="xl:w-auto xl:h-auto h-48 w-48 object-cover xl:hidden" />
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center">Les animateurs ponctuels</div>
