@@ -39,7 +39,7 @@ function InstagramPost() {
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
                 <BsThreeDots />    
         </div>
-      <div className="max-w-xs xl:w-auto mt-4">
+      <div className="xl:w-auto mt-4">
         <img src={post.media_url} alt={post.caption} className="w-full" />
         <div className="flex space-x-4 py-2 p-4">
           <FaHeart className="text-red-500" />
