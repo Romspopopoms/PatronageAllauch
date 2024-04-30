@@ -5,6 +5,7 @@ import AccueilActu from "../components/AccueilActu";
 import Accueil4 from "../components/AccueilInsta";
 import Footer from "../components/Footer"
 import YoutubeAccueil from "../components/YoutubeAccueil";
+import InstagramPost from "../components/InstagramPost";
 
 
 const Home = () => {
@@ -15,7 +16,10 @@ const Home = () => {
         <Accueil2 />
         <YoutubeAccueil />
         <AccueilActu />
+        <div className="flex xl:flex-row justify-center items-center gap-x-8 gap-y-4 ">
+        <InstagramPost />
         <Accueil4 />
+        </div>
         <Footer />
     </div>
   );
