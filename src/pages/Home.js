@@ -2,7 +2,6 @@ import React from "react";
 import Accueil1 from "../components/Accueil1";
 import Accueil2 from "../components/Accueil2";
 import AccueilActu from "../components/AccueilActu";
-import Accueil4 from "../components/AccueilInsta";
 import Footer from "../components/Footer"
 import YoutubeAccueil from "../components/YoutubeAccueil";
 import InstagramPost from "../components/InstagramPost";
@@ -16,10 +15,7 @@ const Home = () => {
         <Accueil2 />
         <YoutubeAccueil />
         <AccueilActu />
-        <div className="flex xl:flex-row justify-center items-center gap-x-8 gap-y-4 ">
-        <Accueil4 />
         <InstagramPost /> 
-        </div>
         <Footer />
     </div>
   );
