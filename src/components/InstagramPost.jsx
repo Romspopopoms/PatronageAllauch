@@ -23,7 +23,7 @@ function InstagramPost() {
   if (!post) return <p className="text-center">Loading...</p>;
 
   return (
-    <div className="w-auto h-auto bg-white flex mt-8 xl:mt-20 justify-center items-center xl:gap-x-24 ">
+    <div className="w-auto h-auto bg-white flex mt-8 xl:mt-20 justify-center items-center xl:gap-x-32 ">
             <div className="flex flex-col">
 
             <div className="flex flex-col gap-y-8">
@@ -39,7 +39,7 @@ function InstagramPost() {
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
                 <BsThreeDots />    
         </div>
-      <div className="max-w-xs mt-4">
+      <div className="max-w-xs xl:w-auto mt-4">
         <img src={post.media_url} alt={post.caption} className="w-full" />
         <div className="flex space-x-4 py-2 p-4">
           <FaHeart className="text-red-500" />
