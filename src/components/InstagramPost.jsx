@@ -23,7 +23,7 @@ function InstagramPost() {
   if (!post) return <p className="text-center">Loading...</p>;
 
   return (
-    <div className="w-auto h-auto bg-white flex mt-8 xl:mt-20 justify-center items-center xl:gap-x-32 ">
+    <div className="w-auto h-auto bg-white flex flex-col xl:flex-row mt-8 xl:mt-20 justify-center items-center xl:gap-x-32 ">
             <div className="flex flex-col">
 
             <div className="flex flex-col gap-y-8">
