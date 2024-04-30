@@ -28,15 +28,15 @@ function InstagramPost() {
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
                 <BsThreeDots />    
         </div>
-      <div className="max-w-xs">
+      <div className="max-w-xs mt-4 p-4">
         <img src={post.media_url} alt={post.caption} className="w-full" />
         <div className="flex space-x-4 py-2">
           <FaHeart className="text-red-500" />
           <FaComment />
           <FaShareSquare />
         </div>
-        <p className="text-sm">{post.likes}</p>
-        <p className="text-sm">{post.caption}</p>
+        <p className="text-sm text-black">{post.likes}</p>
+        <p className="text-sm text-black">{post.caption}</p>
         <a href={post.permalink} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
           View on Instagram
         </a>
