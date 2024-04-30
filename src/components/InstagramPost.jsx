@@ -28,7 +28,7 @@ function InstagramPost() {
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
                 <BsThreeDots />    
         </div>
-        <img src={post.media_url} alt={post.caption} className="w-full object-cover" />
+        <img src={post.media_url} alt={post.caption} className="w-full" />
         <div className="flex space-x-4 py-2">
           <FaHeart className="text-red-500" />
           <FaComment />
