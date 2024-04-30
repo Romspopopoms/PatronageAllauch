@@ -6,11 +6,11 @@ import LogoVox from "../assets/LogoVox.png"
 const Menu1 = [
     {
         name: "Activites",
-        href: "/activités"
+        href: "/activites"
     },
     {
         name: "Nous Contacter",
-        href: "/nouscontacter"
+        href: "/contact"
     },
     {
         name: "Newsletter",
@@ -56,8 +56,8 @@ const Footer = () => {
         patronageallauch@gmail.com</p>
     </div>
     </div>
-    <div className="w-auto h-auto xl:h-[90px] bg-primary flex flex-col justify-center items-center">
-        <div className="text-center font-laila text-white">2024 Patronage Saint Laurent d’Allauch - Conception et rèalisation :</div>
+    <div className="w-auto h-auto bg-primary flex flex-col justify-center items-center">
+        <div className="text-center text-light font-laila text-white mt-4">2024 Patronage Saint Laurent d’Allauch - Conception et rèalisation :</div>
         <img src={LogoVox} alt="Logo_VoxUnity" className="size-auto object-cover"/>
     </div>
     </div>
