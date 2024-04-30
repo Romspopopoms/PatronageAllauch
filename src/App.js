@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Activités from './pages/Activités';
 import Quisommesnous from './pages/Quisommesnous';
 import Recrutement from './pages/Recrutement';
+import ContactPage from './pages/Contact';
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
               <Route path="activites" element={<Activités />} />
               <Route path="Quisommesnous" element={<Quisommesnous />} />
               <Route path="recrutement" element={<Recrutement />} />
+              <Route path="contact" element={<ContactPage />} />
+
 
             </Routes>
           </div>

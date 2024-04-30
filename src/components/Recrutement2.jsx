@@ -9,9 +9,9 @@ import PERMA from "../assets/BAFABAFDPERMA.png"
 const Recrutement2 = () => { 
     return (
         <div className="h-auto w-auto flex flex-col justify-center items-center xl:gap-y-16">
-            <div className="text-3xl xl:text-5xl font-bold font-kalam text-secondary text-center mt-2 xl:mt-8">Devenir bénévole</div>
+            <div className="text-3xl xl:text-5xl font-bold font-kalam text-secondary text-center mt-6 xl:mt-8">Devenir bénévole</div>
             <div className="flex flex-col xl:flex-row xl:gap-x-12 justify-center items-center">
-                <img src={Aide} alt="Aideauxdevoirs" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
+                <img src={Aide} alt="Aideauxdevoirs" className="xl:w-auto xl:h-auto h-48 w-48 object-cover mt-6 xl:mt-0" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center mt-4 xl:mt-0 ">Aide aux devoirs</div>
                 <div className="text-2xl font-semibold font-kalam text-[#74A7BE] text-center">Un soir par semaine</div>
@@ -30,7 +30,7 @@ par semaine.</p>
 
             <div className="flex flex-col xl:flex-row xl:gap-x-12 justify-center items-center">
                 <div className="flex flex-col xl:flex-row gap-y-4  justify-center items-center xl:gap-x-24">
-                <img src={FormaPro} alt="FormationPro" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
+                <img src={FormaPro} alt="FormationPro" className="xl:w-auto xl:h-auto h-48 w-48 object-cover mt-6 xl:mt-0" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center">Stage BAFA</div>
                 <div className="text-2xl font-semibold font-kalam text-[#74A7BE] text-center">Quinze jours de vacances</div>
@@ -63,7 +63,7 @@ par semaine.</p>
 
             <div className="flex flex-col xl:flex-row xl:gap-x-12 justify-center items-center">
                 <div className="flex flex-col xl:flex-row gap-y-4  justify-center items-center xl:gap-x-24">
-                <img src={CPJEPS} alt="FormationPro" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
+                <img src={CPJEPS} alt="FormationPro" className="xl:w-auto xl:h-auto h-48 w-48 object-cover mt-6 xl:mt-0" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center">Formation CPJEPS et BPJEPS</div>
                 <div className="text-2xl font-semibold font-kalam text-[#74A7BE] text-center">Une année scolaire</div>
@@ -80,7 +80,7 @@ par semaine.</p>
             <div className="text-3xl xl:text-5xl font-bold font-kalam text-secondary text-center mt-8 xl-mt-0 ">Recrutement</div>
 
             <div className="flex flex-col xl:flex-row xl:gap-x-12 justify-center items-center">
-                <img src={BAFA} alt="Formateur" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
+                <img src={BAFA} alt="Formateur" className="xl:w-auto xl:h-auto h-48 w-48 object-cover mt-6 xl:mt-0" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center mt-4 xl:mt-0 ">Animateur BAFA/BAFD ponctuel</div>
                 <div className="text-2xl font-semibold font-kalam text-[#74A7BE] text-center">Pèriodes de Vacances </div>
@@ -113,7 +113,7 @@ par semaine.</p>
             </div>
 
             <div className="flex flex-col xl:flex-row xl:gap-x-12 justify-center items-center">
-                <img src={PERMA} alt="Formateur" className="xl:w-auto xl:h-auto h-48 w-48 object-cover" />
+                <img src={PERMA} alt="Formateur" className="xl:w-auto xl:h-auto h-48 w-48 object-cover mt-8 xl:mt-0" />
                 <div className="flex flex-col gap-y-4">
                 <div className="text-4xl font-extrabold font-kalam text-accent text-center mt-4 xl:mt-0 ">Animateur BAFA/BAFD permanant</div>
                 <div className="text-2xl font-semibold font-kalam text-[#74A7BE] text-center">CDI en temps plein</div>

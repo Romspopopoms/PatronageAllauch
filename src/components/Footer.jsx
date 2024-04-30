@@ -20,8 +20,8 @@ const Menu1 = [
 
 const Footer = () => {
   return (
-    <div className="mt-8 xl:mt-0 flex flex-col">
-    <div className="flex flex-col xl:flex-row h-[396px] w-auto bg-white justify-between items-center px-24  ">
+    <div className="flex flex-col">
+    <div className="flex flex-col xl:flex-row h-[396px] w-auto bg-white justify-between items-center px-24 py-6 xl:py-0">
     <div className="flex flex-col">
         <img src={Logobleu} alt="Logo2" className="h-auto w-auto xl:w-[200px] xl:h-[100px] object-cover"/>
         {Menu1.map((item, index) => {
@@ -47,7 +47,7 @@ const Footer = () => {
         </a>
     </div>
     <div className="text-center font-laila text-[#74A7BE]">
-        <div className="text-3xl underline">Contact</div>
+        <div className="text-2xl xl:text-3xl underline">Contact</div>
         <p className="font-light">Patronage d’Allauch<br></br>
         495 Avenue Leï Rima,<br></br>
         13190 Allauch<br></br>
