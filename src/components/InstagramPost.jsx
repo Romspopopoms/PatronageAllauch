@@ -35,10 +35,10 @@ function InstagramPost() {
           <FaComment />
           <FaShareSquare />
         </div>
-        <p className="text-sm p-4 overflow-hidden text-ellipsis">{post.caption}</p>
-        <p className='text-gray-300 text-sm py-2'>View all 16 comments</p>
+        <p className="text-sm px-4 py-2 overflow-hidden text-ellipsis">{post.caption}</p>
+        <p className='text-gray-300 text-sm px-2'>View all 16 comments</p>
         <div className='flex justify-center items-center'>
-        <a href={post.permalink} target="_blank" rel="noopener noreferrer" className="text-secondary text-center underline">
+        <a href={post.permalink} target="_blank" rel="noopener noreferrer" className="text-secondary text-center underline py-2">
           Rejoins-nous sur instagram!
         </a>
         </div>
