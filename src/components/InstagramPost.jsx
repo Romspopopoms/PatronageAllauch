@@ -28,8 +28,7 @@ function InstagramPost() {
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
                 <BsThreeDots />    
         </div>
-      <div className="max-w-xs mx-auto p-4 ">
-        <img src={post.media_url} alt={post.caption} className="w-full rounded-lg" />
+        <img src={post.media_url} alt={post.caption} className="w-full object-cover" />
         <div className="flex space-x-4 py-2">
           <FaHeart className="text-red-500" />
           <FaComment />
@@ -41,7 +40,6 @@ function InstagramPost() {
           View on Instagram
         </a>
       </div>
-    </div>
   );
 }
 
