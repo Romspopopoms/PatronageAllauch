@@ -20,7 +20,7 @@ function InstagramPost() {
     fetchInstagramPost();
   }, []);
 
-  if (!post) return <p className="text-center">Loading...</p>;
+  if (!post) return <p className="text-center text-secondary text-lg font-laila">Loading...</p>;
 
   return (
     <div className="w-auto h-auto bg-white flex flex-col xl:flex-row mt-8 xl:mt-20 justify-center items-center xl:gap-x-32 ">
@@ -40,7 +40,7 @@ function InstagramPost() {
                 <BsThreeDots />    
         </div>
       <div className="xl:w-auto mt-4">
-        <img src={post.media_url} alt={post.caption} className="w-full" />
+        <img src={post.media_url} alt={post.caption} className="xl:w-full w-auto" />
         <div className="flex space-x-4 py-2 p-4">
           <FaHeart className="text-red-500" />
           <FaComment />
