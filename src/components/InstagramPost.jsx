@@ -23,12 +23,10 @@ function InstagramPost() {
   if (!post) return <p className="text-center">Loading...</p>;
 
   return (
-    <div className='h-auto w-auto flex flex-col'>
-        <div className='flex flex-row justify-between items-center px-4'>
-            <div>
+    <div className='h-auto w-auto flex flex-col border-2 border-gray-300 rounded-lg shadow-xl'>
+        <div className='flex flex-row justify-between items-center px-4 mt-4 h-auto w-auto'>
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
-                <BsThreeDots />
-            </div>
+                <BsThreeDots />    
         </div>
       <div className="max-w-xs mx-auto p-4 ">
         <img src={post.media_url} alt={post.caption} className="w-full rounded-lg" />
