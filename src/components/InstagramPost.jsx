@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { DeviceFrameset } from 'react-device-frameset';
+import 'react-device-frameset/styles/marvel-devices.min.css';
 
 function InstagramPost() {
   const [post, setPost] = useState(null);
@@ -20,12 +22,14 @@ function InstagramPost() {
   if (!post) return <p>Loading...</p>;
 
   return (
-    <div>
-      <h1>Latest Instagram Post</h1>
-      <img src={post.media_url} alt={post.caption} />
-      <p>{post.caption}</p>
-      <a href={post.permalink} target="_blank" rel="noopener noreferrer">View on Instagram</a>
-    </div>
+    <DeviceFrameset device="iPhone X" color="silver">
+      <div style={{ margin: 'auto', width: '90%', padding: '10px' }}>
+        <h1 style={{ textAlign: 'center' }}>Latest Instagram Post</h1>
+        <img src={post.media_url} alt={post.caption} style={{ width: '100%', height: 'auto', borderRadius: '10px' }} />
+        <p>{post.caption}</p>
+        <a href={post.permalink} target="_blank" rel="noopener noreferrer">View on Instagram</a>
+      </div>
+    </DeviceFrameset>
   );
 }
 
