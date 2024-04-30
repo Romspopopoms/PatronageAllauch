@@ -17,8 +17,8 @@ const Home = () => {
         <YoutubeAccueil />
         <AccueilActu />
         <div className="flex xl:flex-row justify-center items-center gap-x-8 gap-y-4 ">
-        <InstagramPost />
         <Accueil4 />
+        <InstagramPost /> 
         </div>
         <Footer />
     </div>
