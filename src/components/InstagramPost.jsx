@@ -35,8 +35,8 @@ function InstagramPost() {
           <FaComment />
           <FaShareSquare />
         </div>
-        <p className="text-lg p-4">{post.likes}</p>
-        <p className="text-lg p-4 overflow-hidden text-ellipsis whitespace-nowrap text-center">{post.caption}</p>
+        <p className="text-sm p-4">{post.likes}</p>
+        <p className="text-sm p-4 overflow-hidden text-ellipsis text-center">{post.caption}</p>
         <a href={post.permalink} target="_blank" rel="noopener noreferrer" className="text-secondary text-center underline">
           Rejoins-nous sur instagram!
         </a>
