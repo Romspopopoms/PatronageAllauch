@@ -34,7 +34,7 @@ function InstagramPost() {
                     moments !</p>
             </div>
             </div>
-    <div className='h-auto w-auto xl:w-[390px] flex flex-col border-2 border-gray-300 rounded-lg shadow-xl'>
+    <div className='h-auto w-auto xl:w-[390px] flex flex-col border-2 border-gray-300 rounded-lg shadow-xl mt-6 xl:mt-0'>
         <div className='flex flex-row justify-between items-center px-4 mt-4 h-auto w-auto'>
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
                 <BsThreeDots />    
