@@ -10,7 +10,7 @@ async function sendEmail(req, res) {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-        user: "maSainteBible@gmail.com",
+        user: "masaintebible@gmail.com",
         pass: "Peperomain13*"
             }
           });
