@@ -12,7 +12,7 @@ const ContactModal = () => {
             phone: e.target[3].value,
             message: e.target[4].value,
         };
-
+    
         try {
             const response = await fetch('/api/sendEmail', {
                 method: 'POST',
@@ -29,12 +29,14 @@ const ContactModal = () => {
                     e.target.reset();
                 }, 5000);
             } else {
+                console.log("HTTP-Error: " + response.status);
                 throw new Error('Something went wrong');
             }
         } catch (error) {
             console.error('Error:', error);
         }
     };
+    
 
 
     return (
