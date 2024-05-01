@@ -36,13 +36,15 @@ async function sendEmail(formData) {
   const { name, firstName, email, phone, message } = formData;
   const mailOptions = {
     from: 'masaintebible.fr@gmail.com',
-    to: 'masaintebible.fr@gmail.com',
+    to: 'patronageallauch@gmail.com',
     subject: 'Nouveau message du formulaire de contact',
     text: `
       Vous avez reçu un message de 
-      ${name} ${firstName} (${email}):
+      ${name} ${firstName}
       Téléphone : ${phone}
       Message : ${message}
+
+      N'hésitez pas à recontacter cette personne via cette adresse-mail --> ${email}
     `
   };
 
