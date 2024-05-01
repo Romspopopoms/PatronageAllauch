@@ -1,39 +1,50 @@
 import nodemailer from 'nodemailer';
 
-// Nommer la fonction pour l'exportation par défaut
-async function sendEmail(req, res) {
+// Créer un transporteur Nodemailer qui utilise l'authentification OAuth2
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    type: 'OAuth2',
+    user: 'masaintebible.fr@gmail.com', // L'adresse email que vous utilisez pour envoyer des e-mails
+    clientId: process.env.GMAIL_CLIENT_ID,
+    clientSecret: process.env.GMAIL_CLIENT_SECRET,
+    refreshToken: process.env.GMAIL_REFRESH_TOKEN,
+  }
+});
+
+// Fonction pour envoyer des e-mails
+async function sendEmail(formData) {
+  const { name, firstName, email, phone, message } = formData;
+  const mailOptions = {
+    from: 'masaintebible.fr@gmail.com', // L'adresse Gmail utilisée pour OAuth2
+    to: 'masaintebible.fr@gmail.com', // Votre propre adresse où vous souhaitez recevoir les infos du formulaire
+    subject: 'Nouveau message du formulaire de contact',
+    text: `Vous avez reçu un message de ${name} ${firstName} (${email}):
+           Téléphone : ${phone}
+           Message : ${message}`
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return 'Email sent successfully';
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw error;
+  }
+}
+
+// Handler pour les requêtes HTTP à cet endpoint
+async function emailHandler(req, res) {
   if (req.method === 'POST') {
-    const { name, firstName, email, phone, message } = req.body;
-
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true, // true for 465, false for other ports
-        auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD
-            }
-          });
-          
-
-    const mailOptions = {
-      from:'no-reply@yourdomain.com',
-      to: process.env.EMAIL_USER,
-      subject: 'Nouveau message du formulaire de contact',
-      text: `Nom: ${name}\nPrénom: ${firstName}\nEmail: ${email}\nTéléphone: ${phone}\nMessage: ${message}`,
-    };
-
     try {
-      await transporter.sendMail(mailOptions);
-      res.status(200).send({ message: 'Email sent successfully' });
+      const result = await sendEmail(req.body);
+      res.status(200).send({ message: result });
     } catch (error) {
-      console.error('Error sending email:', error);
-      res.status(500).send({ error: 'Failed to send email' });
+      res.status(500).send({ error: 'Failed to send email', details: error.message });
     }
   } else {
     res.status(405).send({ error: 'Method not allowed' });
   }
 }
 
-// Exporter la fonction nommée
-export default sendEmail;
+export default emailHandler;
