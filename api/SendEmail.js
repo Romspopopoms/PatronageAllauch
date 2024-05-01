@@ -6,12 +6,15 @@ async function sendEmail(req, res) {
     const { name, firstName, email, phone, message } = req.body;
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true, // true for 465, false for other ports
         auth: {
         user: "maSainteBible@gmail.com",
         pass: "Peperomain13*"
-      },
-    });
+            }
+          });
+          
 
     const mailOptions = {
       from:'no-reply@yourdomain.com',
