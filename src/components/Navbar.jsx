@@ -26,10 +26,10 @@ const Menu = [
     name: 'Recrutement',
     href: '/recrutement'
   },
-  {
-    name: 'Nos News',
-    href: '/nosnews'
-  },
+  //{
+    //name: 'Nos News',
+   // href: '/nosnews'
+ // },
   {
     name: 'Faire un don',
     href: 'https://www.helloasso.com/associations/patronage-d-allauch'
