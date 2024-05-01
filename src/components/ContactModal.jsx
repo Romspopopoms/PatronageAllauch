@@ -1,18 +1,41 @@
 import React, { useState } from "react";
 
 const ContactModal = () => {
-    const [See, SetSee] = useState(false)
+    const [See, SetSee] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted");
-        SetSee(true); // Mettre à jour l'état pour afficher le message de soumission
-        
-        setTimeout(() => {
-            SetSee(false); // Réinitialiser l'affichage du message
-            e.target.reset(); // Réinitialiser les champs du formulaire
-        }, 5000); // 5000 ms = 5 secondes
+        const formData = {
+            name: e.target[0].value,
+            firstName: e.target[1].value,
+            email: e.target[2].value,
+            phone: e.target[3].value,
+            message: e.target[4].value,
+        };
+
+        try {
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                console.log("Email sent successfully");
+                SetSee(true);
+                setTimeout(() => {
+                    SetSee(false);
+                    e.target.reset();
+                }, 5000);
+            } else {
+                throw new Error('Something went wrong');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
     };
+
 
     return (
         <div className="relative flex justify-center items-center">
@@ -47,7 +70,7 @@ const ContactModal = () => {
                                     className="h-12 xl:w-48 rounded-md border-2 border-accent focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent
                                     text-center" placeholder="mail"
                                     required />
-                                <input type="VotreEmail"
+                                <input type="phone"
                                     className="h-12 xl:w-48 rounded-md border-2 border-accent focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent text-center" placeholder="Téléphone"
                                     required />
                             </div>
