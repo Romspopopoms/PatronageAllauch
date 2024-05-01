@@ -19,9 +19,11 @@ async function sendEmail(formData) {
     from: 'masaintebible.fr@gmail.com', // L'adresse Gmail utilisée pour OAuth2
     to: 'masaintebible.fr@gmail.com', // Votre propre adresse où vous souhaitez recevoir les infos du formulaire
     subject: 'Nouveau message du formulaire de contact',
-    text: `Vous avez reçu un message de ${name} ${firstName} (${email}):
-           Téléphone : ${phone}
-           Message : ${message}`
+    text: `
+            Vous avez reçu un message de 
+            ${name} ${firstName} (${email}):
+            Téléphone : ${phone}
+            Message : ${message}`
   };
 
   try {
