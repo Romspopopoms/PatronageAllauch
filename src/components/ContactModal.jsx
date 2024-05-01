@@ -14,7 +14,7 @@ const ContactModal = () => {
         };
     
         try {
-            const response = await fetch('/api/sendEmail', {
+            const response = await fetch('/api/SendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
