@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { FaHeart, FaComment, FaShareSquare } from 'react-icons/fa';
-import { BsThreeDots } from "react-icons/bs";
 import Avatar from "../assets/Avatarinfo.png"
 
 function InstagramPost() {
@@ -37,7 +36,6 @@ function InstagramPost() {
     <div className='h-auto w-auto xl:w-[390px] flex flex-col border-2 border-gray-300 rounded-lg shadow-xl mt-6 xl:mt-0'>
         <div className='flex flex-row justify-between items-center px-4 mt-4 h-auto w-auto'>
                 <img src={Avatar} alt="Avatar" className='h-auto w-auto object-cover' />
-                <BsThreeDots />    
         </div>
       <div className="max-w-sm xl:max-w-xl mt-4">
         <img src={post.media_url} alt={post.caption} className="w-full" />
