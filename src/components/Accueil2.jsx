@@ -7,7 +7,7 @@ import Ellispe3 from "../assets/Ellipse 3.png"
 const Accueil2 = () => {
     
 return (
-    <div className="flex flex-col w-auto h-auto xl:h-[800px] bg-white mt-4 xl:mt-0">
+    <div className="flex flex-col w-full h-auto xl:h-[800px] bg-white mt-4 xl:mt-0">
         <div className="h-1/4 w-auto flex justify-center items-center">
             <h1 className="font-kalam font-bold text-accent text-2xl text-center xl:text-5xl mt-4 xl:mt-0">Le Patronage au coeur de votre vie</h1>
         </div>

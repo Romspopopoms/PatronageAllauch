@@ -5,9 +5,9 @@ const Accueil1 = () => {
 
 return (
 
-<div className="flex flex-col w-screen xl:w-auto h-auto">
+<div className="flex flex-col w-full xl:w-auto  h-auto">
 <img src={Group} alt="Group" className="w-full h-auto object-cover"/>
-<div className="bg-secondary h-[110px] xl:h-[130px] w-screen flex flex-col xl:flex-row justify-center items-center gap-y-2 xl:gap-x-48">
+<div className="bg-secondary h-[110px] xl:h-[130px] w-full flex flex-col xl:flex-row justify-center items-center gap-y-2 xl:gap-x-48">
     <h1 className="font font-lalezar text-center xl:text-4xl text-white">
     INSCRIVEZ VOS ENFANTS DÈS MAINTENANT
     </h1>

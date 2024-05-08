@@ -25,7 +25,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <div className="flex flex-col w-auto h-auto">
+      <div className="flex flex-col w-full h-full">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
