@@ -4,7 +4,7 @@ const Activités = () => {
     return (
         <div className="flex flex-col h-auto w-auto">
             <Activités1 />
-            <div className="h-auto w-full absolute bottom-[-2200px]">
+            <div className="h-auto w-full absolute bottom-[-2500px] xl:bottom-[-2200px]">
             <Footer />
             </div>
         </div>
